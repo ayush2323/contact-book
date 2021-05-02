@@ -21,7 +21,7 @@ const Contacts = () => {
     } else {
       dispatch(clearAllContact());
     }
-  }, [selectAll]);
+  }, [selectAll, contacts, dispatch]);
 
   return (
     <div>

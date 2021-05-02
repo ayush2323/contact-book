@@ -20,7 +20,7 @@ const EditContact = () => {
       setEmail(contact.email);
     }
     dispatch(getContact(id));
-  }, [contact]);
+  }, [contact, dispatch, id]);
 
   const onUpdateContact = (e) => {
     e.preventDefault();
