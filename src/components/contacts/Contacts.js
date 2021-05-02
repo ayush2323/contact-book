@@ -23,6 +23,10 @@ const Contacts = () => {
     }
   }, [selectAll, contacts, dispatch]);
 
+  if(contacts.length === 0) {
+    return <h1 style={{textAlign: 'center', color: 'red', fontSize: '50px', fontFamily: 'Roboto'}}>Please Add Contact</h1>
+  }
+
   return (
     <div>
       {selctedContcats.length > 0 ? (

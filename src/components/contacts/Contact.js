@@ -28,7 +28,7 @@ const Contact = ({ contact, selectAll }) => {
         <Link to={`/contacts/edit/${id}`}>
           <span className="material-icons mr-2">edit</span>
         </Link>
-        <span
+        <span style={{cursor: 'pointer'}}
           className="material-icons  text-danger"
           onClick={() => dispatch(deleteContact(id))}
         >
